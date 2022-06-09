@@ -1,0 +1,55 @@
+site_name: Colorata Docs
+
+theme:
+  features:
+    - navigation.instant
+    - content.tabs.link
+  name: 'material'
+  language: 'en'
+  icon:
+        repo: fontawesome/brands/gitlab
+  palette:
+    - media: "(prefers-color-scheme: light)" 
+
+
+      scheme: docs-light
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)" 
+
+
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+
+nav:
+        - Home: index.md
+        - AnimateAsLifestyle:
+          - Getting started: animateAsLifestyle/getting_started.md
+          - AnimationType: 
+                - General: animateAsLifestyle/animation_type.md
+                - FadeOnly: animateAsLifestyle/animation_type/fade_only.md
+                - ScaleOnly: animateAsLifestyle/animation_type/scale_only.md
+                - FadeAndScale: animateAsLifestyle/animation_type/fade_scale.md
+                - FadeAndSlide: animateAsLifestyle/animation_type/fade_slide.md
+          - AnimateVisibility: animateAsLifestyle/animate_visibility.md
+extra_css:
+        - stylesheets/extra.css
+extra_javascript:
+        - javascripts/extra.js
+repo_url:
+        https://gitlab.com/Colorata/animateaslifestyle
+repo_name:
+        AnimateAsLifestyle
+markdown_extensions:
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
