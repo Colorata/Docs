@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started" class="md-skip">
+        <a href="#animatevisibility" class="md-skip">
           Skip to content
         </a>
       
@@ -439,8 +439,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installing" class="md-nav__link">
-    Installing
+  <a href="#specs" class="md-nav__link">
+    Specs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#samples" class="md-nav__link">
+    Samples
   </a>
   
 </li>
@@ -449,6 +456,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../animate_rounded_corner_shape/" class="md-nav__link">
+        AnimateShape
+      </a>
     </li>
   
 
@@ -487,8 +508,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installing" class="md-nav__link">
-    Installing
+  <a href="#specs" class="md-nav__link">
+    Specs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#samples" class="md-nav__link">
+    Samples
   </a>
   
 </li>
@@ -511,44 +539,75 @@
 
 
 
-<h1 id="getting-started">Getting started</h1>
-<p>What <code>AnimateAsLifestyle</code> actually is? Is a library that creates most animations on your app in more easy way.</p>
-<h2 id="installing">Installing</h2>
-<p>Import library to your project(build.gradle app):</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Groovy</label><label for="__tabbed_1_2">Kotlin</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="n">dependencies</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">implementation</span><span class="w"> </span><span class="s1">&#39;com.colorata:animateAsLifestyle:1.0.0&#39;</span><span class="w"></span>
-<span class="o">}</span><span class="w"></span>
+<figure>
+<p><img alt="Image title" src="../m3-media/a31.jpg" />
+  <figcation></figcaption></p>
+</figure>
+<h1 id="animatevisibility">AnimateVisibility</h1>
+<p>AnimateVisibility is an extension of <code>Modifier</code> interface that will let you animate <em>Composition</em>.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">fun</span><span class="w"> </span><span class="n">Modifier</span><span class="p">.</span><span class="nf">animateVisibility</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">visible</span><span class="p">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="n">animationType</span><span class="p">:</span><span class="w"> </span><span class="n">AnimationType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">AnimationType</span><span class="p">.</span><span class="na">FadeOnly</span><span class="p">()</span><span class="w"></span>
+<span class="p">)</span><span class="w"></span>
 </code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="n">dependencies</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">    </span><span class="n">implementation</span><span class="p">(</span><span class="s">&quot;com.colorata:animateAsLifestyle:1.0.0&quot;</span><span class="p">)</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-</code></pre></div>
-</div>
-</div>
-</div>
+<h2 id="specs">Specs</h2>
 <table>
 <thead>
 <tr>
-<th align="center">Feature</th>
-<th align="center">Description</th>
+<th>Parameter</th>
+<th>Description</th>
+<th>Type</th>
+<th>Default value</th>
+<th>Allowed values</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">ag;laj</td>
-<td align="center">jga;ljg;ajg</td>
+<td><em>visible</em></td>
+<td>Is <em>Composition</em> visible</td>
+<td>Boolean</td>
+<td><strong>Not provided</strong></td>
+<td><em>true, false</em></td>
 </tr>
 <tr>
-<td align="center">kgj;lajgl;ja</td>
-<td align="center">lajsgl;ajgl;aj</td>
+<td><em>animationType</em></td>
+<td>Type of animation</td>
+<td>AnimationType</td>
+<td>FadeOnly()</td>
+<td>-</td>
 </tr>
 </tbody>
 </table>
+<h2 id="samples">Samples</h2>
+<div class="highlight"><pre><span></span><code><span class="n">Button</span><span class="p">(</span><span class="w"></span>
+<span class="w">    </span><span class="n">onClick</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">},</span><span class="w"> </span><span class="n">modifier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Modifier</span><span class="p">.</span><span class="na">animateVisibility</span><span class="p">(</span><span class="w"></span>
+<span class="w">        </span><span class="n">isCompositionLaunched</span><span class="p">(),</span><span class="w"></span>
+<span class="w">        </span><span class="n">animationType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">AnimationType</span><span class="p">.</span><span class="na">FadeAndSlide</span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="p">)</span><span class="w"></span>
+<span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">Text</span><span class="p">(</span><span class="n">text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;Send&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Light</label><label for="__tabbed_1_2">Dark</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><figure>
+    <video width="100%" preload="none" poster="../m3-media/background-light.jpg" controls="false" aria-hidden="true" loop class="video" autoplay>
+    <source src="../animation_type/fade_slide/fadeslide-light.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+</figure></p>
+</div>
+<div class="tabbed-block">
+<p><figure>
+    <video width="100%" preload="none" poster="../m3-media/background-dark.jpg" controls="false" aria-hidden="true" loop class="video" autoplay>
+    <source src="../animation_type/fade_slide/fadeslide-dark.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+</figure></p>
+</div>
+</div>
+</div>
 
               
             </article>
@@ -580,6 +639,21 @@
           </div>
         </a>
       
+      
+        
+        <a href="../animate_rounded_corner_shape/" class="md-footer__link md-footer__link--next" aria-label="Next: AnimateShape" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              AnimateShape
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
       
     </nav>
   
