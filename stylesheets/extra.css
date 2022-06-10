@@ -93,14 +93,14 @@ li::marker {
   padding: 1rem;
 }*/
 
-.md-nav__item--active {
+/*.md-nav__item--active {
   background: var(--md-code-bg-color);
   border-radius: 1rem;
 }
 .md-nav__link--active {
   background: var(--md-code-bg-color);
   border-radius: 1rem;
-}
+}*/
 
 
 .md-nav__link {
@@ -111,6 +111,10 @@ li::marker {
   padding-bottom: 1rem;
 }
 
+.md-nav__item .md-nav__item--active:not(.md-nav__item--nested) {
+  background: var(--md-code-bg-color);
+  border-radius: 1rem;
+}
 .md-nav__title {
   padding: 1rem;
 }
