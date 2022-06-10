@@ -420,6 +420,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#custom-alignment" class="md-nav__link">
+    Custom alignment
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -525,6 +532,67 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../background/" class="md-nav__link">
+        Background
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_8" type="checkbox" id="__nav_2_8" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_8">
+          Material 3
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Material 3" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_8">
+          <span class="md-nav__icon md-icon"></span>
+          Material 3
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../material_3/fab/" class="md-nav__link">
+        FAB
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -586,6 +654,13 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#custom-alignment" class="md-nav__link">
+    Custom alignment
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -620,7 +695,8 @@
 <span class="w">    </span><span class="n">toAlpha</span><span class="p">:</span><span class="w"> </span><span class="kt">Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1f</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="n">fromScale</span><span class="p">:</span><span class="w"> </span><span class="kt">Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0f</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="n">toScale</span><span class="p">:</span><span class="w"> </span><span class="kt">Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1f</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">animationSpec</span><span class="p">:</span><span class="w"> </span><span class="n">AnimationSpec</span><span class="o">&lt;</span><span class="kt">Float</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">spring</span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="n">animationSpec</span><span class="p">:</span><span class="w"> </span><span class="n">AnimationSpec</span><span class="o">&lt;</span><span class="kt">Float</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">spring</span><span class="p">(),</span><span class="w"></span>
+<span class="w">    </span><span class="n">alignment</span><span class="p">:</span><span class="w"> </span><span class="n">Alignment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Alignment</span><span class="p">.</span><span class="na">Center</span><span class="w"></span>
 <span class="p">)</span><span class="w"></span>
 </code></pre></div></p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Light</label><label for="__tabbed_1_2">Dark</label></div>
@@ -688,6 +764,13 @@
 <td>General animationSpec for animation</td>
 <td>AnimationSpec&lt;Float></td>
 <td>spring()</td>
+<td>-</td>
+</tr>
+<tr>
+<td><em>aligment</em></td>
+<td>Alignment of scale animation</td>
+<td>Alignment</td>
+<td>Alignment.Center</td>
 <td>-</td>
 </tr>
 </tbody>
@@ -794,6 +877,27 @@
 </div>
 </div>
 </div>
+<h3 id="custom-alignment">Custom <em>alignment</em></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Light <code>Alignment.TopStart</code></label><label for="__tabbed_5_2">Dark <code>Alignment.TopStart</code></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p><figure>
+    <video width="100%" preload="none" poster="../../m3-media/background-light.jpg" controls="false" aria-hidden="true" loop class="video" autoplay>
+    <source src="fadescale-align-light.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+</figure></p>
+</div>
+<div class="tabbed-block">
+<p><figure>
+    <video width="100%" preload="none" poster="../../m3-media/background-dark.jpg" controls="false" aria-hidden="true" loop class="video" autoplay>
+    <source src="fadescale-align-dark.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+</figure></p>
+</div>
+</div>
+</div>
 
               
             </article>
@@ -863,7 +967,7 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "content.tabs.link", "header.autohide"], "search": "../../../assets/javascripts/workers/search.b028fd86.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
       <script src="../../../assets/javascripts/bundle.7f366e99.min.js"></script>
