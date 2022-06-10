@@ -115,6 +115,11 @@ li::marker {
   background: var(--md-code-bg-color);
   border-radius: 1rem;
 }
+
+.md-nav__link.md-nav__link--passed.md-nav__link--active {
+  background: var(--md-code-bg-color);
+  border-radius: 1rem;
+}
 .md-nav__title {
   padding: 1rem;
 }
